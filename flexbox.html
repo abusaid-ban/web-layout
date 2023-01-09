@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 300px;
+            border:5px dotted greenyellow;
+            display: flex;
+            align-items: stretch;
+            /* justify-content: flex-end; */
+             /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-wrap: no-wrap; */
+        }
+        .box{
+            width: 150px;
+            /* height: 150px; */
+            border: 4px solid lightsalmon;
+        }
+        #box2{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div id="box2"class="box">box-2</div>
+        
+    </div>
+</body>
+</html>
